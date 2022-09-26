@@ -27,9 +27,10 @@ The preferred method is to use helm. See [Install using Helm](http://tf.isaaguil
 Another simple method is to install the resources under `deploy` & `deploy/crds`
 
 ```bash
-git clone https://github.com/isaaguilar/terraform-operator.git
+git clone https://github.com/lmasiero/terraform-operator.git
 cd terraform-operator
-kubectl apply -f deploy/bundles/v0.9.0-pre2/v0.9.0-pre2.yaml
+version="v0.9.0-pre2"
+kubectl apply -f deploy/bundles/$version/$version.yaml
 ```
 
 See [more installation options](http://tf.isaaguilar.com/docs/getting-started/installation/).
